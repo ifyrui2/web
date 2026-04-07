@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>native.exe — FiveM Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-icon">&#9670;</span>
+                native<span class="accent">.exe</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#showcase">Showcase</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+            <a href="#pricing" class="nav-cta">Get Access</a>
+            <button class="mobile-toggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">FiveM External Menu</div>
+            <h1>native<span class="accent">.exe</span></h1>
+            <p class="hero-subtitle">The most advanced and undetected FiveM menu. Dominate every server with powerful features, clean UI, and seamless performance.</p>
+            <div class="hero-buttons">
+                <a href="#pricing" class="btn btn-primary">
+                    <span>Purchase Now</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#features" class="btn btn-outline">Explore Features</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="5000">0</span>+
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="99">0</span>%
+                    <span class="stat-label">Uptime</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="150">0</span>+
+                    <span class="stat-label">Features</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="menu-preview">
+                <div class="menu-titlebar">
+                    <span class="menu-dot red"></span>
+                    <span class="menu-dot yellow"></span>
+                    <span class="menu-dot green"></span>
+                    <span class="menu-title">native.exe v3.2.1</span>
+                </div>
+                <div class="menu-body">
+                    <div class="menu-tab active">Player</div>
+                    <div class="menu-tab">Vehicle</div>
+                    <div class="menu-tab">World</div>
+                    <div class="menu-tab">Teleport</div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span>God Mode</span>
+                            <span class="toggle on"></span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Infinite Stamina</span>
+                            <span class="toggle on"></span>
+                        </div>
+                        <div class="menu-item">
+                            <span>No Ragdoll</span>
+                            <span class="toggle"></span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Super Jump</span>
+                            <span class="toggle"></span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Invisible</span>
+                            <span class="toggle on"></span>
+                        </div>
+                        <div class="menu-item">
+                            <span>Fast Run</span>
+                            <span class="toggle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2>Packed with <span class="accent">Power</span></h2>
+                <p>Everything you need to take full control of any FiveM server.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#9889;</div>
+                    <h3>Player Options</h3>
+                    <p>God mode, infinite stamina, no ragdoll, super jump, invisibility, fast run, and more player modifications.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128663;</div>
+                    <h3>Vehicle Options</h3>
+                    <p>Spawn any vehicle, vehicle god mode, custom handling, speed boost, and full vehicle customization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127758;</div>
+                    <h3>World Options</h3>
+                    <p>Change weather, time control, blackout mode, gravity modifications, and environmental tweaks.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128205;</div>
+                    <h3>Teleportation</h3>
+                    <p>Waypoint teleport, coordinate teleport, saved locations, and instant movement across the map.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128274;</div>
+                    <h3>Undetected</h3>
+                    <p>Advanced anti-detection system keeps you safe from all major anti-cheat solutions on FiveM servers.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127793;</div>
+                    <h3>Lua Executor</h3>
+                    <p>Built-in Lua script executor with syntax highlighting, auto-complete, and a library of pre-made scripts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128100;</div>
+                    <h3>ESP & Aimbot</h3>
+                    <p>Player ESP, health bars, distance indicators, bone aimbot with smoothing and FOV adjustments.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#9881;</div>
+                    <h3>Auto Updates</h3>
+                    <p>Automatic updates ensure you always have the latest features and security patches without re-downloading.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="showcase">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Showcase</span>
+                <h2>See it in <span class="accent">Action</span></h2>
+                <p>A clean and intuitive interface designed for speed and efficiency.</p>
+            </div>
+            <div class="showcase-grid">
+                <div class="showcase-card">
+                    <div class="showcase-mockup">
+                        <div class="mockup-header">
+                            <span>Player Menu</span>
+                            <span class="mockup-badge">Active</span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-row"><span>Health</span><span class="bar"><span style="width:100%"></span></span></div>
+                            <div class="mockup-row"><span>Armor</span><span class="bar"><span style="width:75%"></span></span></div>
+                            <div class="mockup-row"><span>Stamina</span><span class="bar"><span style="width:100%"></span></span></div>
+                            <div class="mockup-row"><span>Speed</span><span class="bar"><span style="width:60%"></span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card large">
+                    <div class="showcase-mockup">
+                        <div class="mockup-header">
+                            <span>Lua Executor</span>
+                            <span class="mockup-badge run">Execute</span>
+                        </div>
+                        <div class="mockup-code">
+                            <code>
+<span class="code-keyword">local</span> ped = <span class="code-func">PlayerPedId</span>()<br>
+<span class="code-keyword">local</span> coords = <span class="code-func">GetEntityCoords</span>(ped)<br>
+<br>
+<span class="code-func">SetEntityHealth</span>(ped, <span class="code-num">200</span>)<br>
+<span class="code-func">SetPedArmour</span>(ped, <span class="code-num">100</span>)<br>
+<span class="code-func">SetRunSprintMultiplierForPlayer</span>(<br>
+&nbsp;&nbsp;<span class="code-func">PlayerId</span>(), <span class="code-num">1.49</span><br>
+)
+                            </code>
+                        </div>
+                    </div>
+                </div>
+                <div class="showcase-card">
+                    <div class="showcase-mockup">
+                        <div class="mockup-header">
+                            <span>ESP Overlay</span>
+                            <span class="mockup-badge">Rendering</span>
+                        </div>
+                        <div class="mockup-esp">
+                            <div class="esp-box" style="top:10%;left:20%">
+                                <span>Player_42</span>
+                                <span class="esp-hp">❤ 200</span>
+                                <span class="esp-dist">45m</span>
+                            </div>
+                            <div class="esp-box" style="top:40%;left:55%">
+                                <span>xNoob99x</span>
+                                <span class="esp-hp">❤ 120</span>
+                                <span class="esp-dist">112m</span>
+                            </div>
+                            <div class="esp-box" style="top:65%;left:30%">
+                                <span>Admin_Steve</span>
+                                <span class="esp-hp warning">❤ 50</span>
+                                <span class="esp-dist">28m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Pricing</span>
+                <h2>Choose Your <span class="accent">Plan</span></h2>
+                <p>Flexible pricing for every user. All plans include full feature access.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Daily</h3>
+                        <div class="price">$5<span>/day</span></div>
+                    </div>
+                    <ul class="price-features">
+                        <li>&#10003; All Features</li>
+                        <li>&#10003; Lua Executor</li>
+                        <li>&#10003; Auto Updates</li>
+                        <li>&#10003; Basic Support</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline full">Get Started</a>
+                </div>
+                <div class="price-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="price-header">
+                        <h3>Weekly</h3>
+                        <div class="price">$15<span>/week</span></div>
+                    </div>
+                    <ul class="price-features">
+                        <li>&#10003; All Features</li>
+                        <li>&#10003; Lua Executor</li>
+                        <li>&#10003; Auto Updates</li>
+                        <li>&#10003; Priority Support</li>
+                        <li>&#10003; Script Library</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary full">Get Started</a>
+                </div>
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Lifetime</h3>
+                        <div class="price">$50<span>/forever</span></div>
+                    </div>
+                    <ul class="price-features">
+                        <li>&#10003; All Features</li>
+                        <li>&#10003; Lua Executor</li>
+                        <li>&#10003; Auto Updates</li>
+                        <li>&#10003; VIP Support</li>
+                        <li>&#10003; Script Library</li>
+                        <li>&#10003; Early Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline full">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">FAQ</span>
+                <h2>Frequently <span class="accent">Asked</span></h2>
+                <p>Got questions? We have answers.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">Is native.exe undetected?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, native.exe uses advanced anti-detection techniques and is regularly updated to stay undetected on all major FiveM anti-cheat systems.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">How do I receive the menu after purchase?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After purchase, you'll receive a download link and license key via email and in your Discord DMs within minutes.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Does it work on all FiveM servers?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>native.exe is compatible with all FiveM server frameworks including ESX, QBCore, vRP, and custom frameworks.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Is there a Discord community?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Join our Discord server with 5,000+ members to get support, share scripts, and connect with other users.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What are the system requirements?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Windows 10/11, 4GB RAM minimum, and an active FiveM installation. The menu uses minimal resources and won't impact your FPS.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="nav-logo"><span class="logo-icon">&#9670;</span> native<span class="accent">.exe</span></span>
+                    <p>The most advanced FiveM menu available. Built for performance, designed for power.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 native.exe — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
